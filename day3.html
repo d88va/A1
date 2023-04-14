@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+   html {
+    width: 100vw;
+    height: 100vh;
+    background: none;
+    margin: 0;
+    padding: 0;
+   }
+
+    body {
+        width: 100%;
+        height: 100%;
+        background: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    </style>
+
+
+    <div id="main-container">
+
+        <h1>Hello World</h1>
+
+        <div id="text1">We will change this text</div>
+        <button onclick="changeText()"> Change H2 Text </button>
+
+        <div id="box1">This box will change its style </div>
+        <button onclick="changeBoxstyle()"> Change box style</button>
+
+        <div id="box2">This box will change its style </div>
+        <button onclick="changeBoxstyle()"> Change box style</button>
+
+    </div>    
+   
+   <script>
+
+    //target certain elements and make it a variable
+   
+
+    let mainCon = document.getElementById("main-container");
+
+    function changeText(){
+    mainCon.style.width="100%";
+    mainCon.style.height="100%";
+    mainCon.style.backgroundColor="black";
+    }
+
+
+
+
+    let headingTwo = document.getElementById("text1");
+    let box1 = document.getElementById("box1");
+    let box2 = document.getElementById("box2");
+    
+
+
+    //default values of element
+
+    headingTwo.style.fontsize="40px";
+    headingTwo.innerHTML="We will change this text";
+
+    box2.style.width="200px";
+    box2.style.height="300px";
+    box2.style.fontSize="60px";
+    box2.style.backgroundColor="green";
+    box2.style.color="yellow";
+
+
+</script>
+
+</body>
+
+</html>
